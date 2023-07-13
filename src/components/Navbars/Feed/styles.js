@@ -2,9 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container:{
-        flex:1,
-        justifyContent:'center'
-
+        justifyContent:'center',
+        width:50,
+        height:50,
+        margin:10
     },
     userProfileButton:{
         alignItems:'center',

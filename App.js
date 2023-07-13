@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Button, TouchableOpacity, Text, TextInput } from "react-native";
 import NavFeed from './src/components/Navbars/Feed';
+//import globalStyle from './src/styles/global';
 
 const Stack = createNativeStackNavigator();
 
