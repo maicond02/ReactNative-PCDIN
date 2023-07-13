@@ -9,11 +9,10 @@ export const styles = StyleSheet.create({
   loginSetup:{
     flex: 1,
     alignItems: 'center',
-    justifyContent:'center'
+    marginTop:20
   },
   textColor: {
     color: 'black',
-    marginTop: 20,
     fontSize:25,
     color:'#878787'
   },
@@ -51,8 +50,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 20,
-    borderWidth: 3,
-    borderColor:'#0097FF',
+    borderWidth: 2,
+    borderColor:'#CCD1D1',
     marginTop:15,
   }
 });
