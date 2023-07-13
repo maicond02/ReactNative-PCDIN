@@ -4,65 +4,55 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
-    justifyContent: 'center',
     alignItems: 'center',
-    marginTop:30
+  },
+  loginSetup:{
+    flex: 1,
+    alignItems: 'center',
+    justifyContent:'center'
   },
   textColor: {
     color: 'black',
-    marginBottom: 10,
+    marginTop: 20,
     fontSize:25,
     color:'#878787'
   },
   textHeader:{
     color: '#878787',
     marginBottom: 10,
-    fontSize:25
+    fontSize:20
   },
   textInput:{
-    backgroundColor:'white',
+    backgroundColor:'#CCD1D1',
     borderRadius: 10,
     borderWidth: 2,
     borderColor:'white',
-    width:200,
+    width:250,
     height:50,
-  },
-  containerLogin: {
-    backgroundColor: '#DCDCDC',
-    alignItems: 'center',
-    width:'90%',
-    height:'90%',
-    borderRadius:50,
-  },
-  loginContent: {
-    flex:1,
-    alignItems: 'center',
-
+    padding:10
   },
   moreConnections:{
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent:'center'
   },
   buttonStyle:{
-    width: 200,
+    width: 250,
     height: 50,
-    borderRadius: 10,
+    borderRadius: 20,
     backgroundColor:'#0097FF',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop:20
+    marginTop:15,
+    marginBottom:15
   },
-  buttonMoreConnections:{
-    width: 200,
+  buttonRegister:{
+    width: 250,
     height: 50,
-    borderRadius: 10,
-    borderWidth: 2,
-    borderColor:'#0097FF',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  requiredLoginText:{
-    marginTop:10,
-    marginBottom:10
+    borderRadius: 20,
+    borderWidth: 3,
+    borderColor:'#0097FF',
+    marginTop:15,
   }
 });
