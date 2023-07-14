@@ -4,7 +4,7 @@ import Profile from '../../Navbars/Feed/index'
 
 export default function Feed({ navigation }){
     return(
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
                 <View style={styles.card}>
                     <View style={styles.header}>

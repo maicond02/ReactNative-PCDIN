@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         justifyContent:'center',
         width:50,
         height:50,
-        margin:10
+        margin:10,
     },
     userProfileButton:{
         alignItems:'center',

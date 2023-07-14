@@ -3,7 +3,7 @@ import { styles } from './styles'
 
 export default function LoginPage({navigation}){
     return(
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
                 <View>
                     <Text style={styles.textColor}>Bem vindo a maior comunidade profissional de pessoas PCD'S</Text>
