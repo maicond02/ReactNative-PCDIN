@@ -5,10 +5,12 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor:'#0097FF',
-        height:40
+        height:50
       },
       rowContainer: {
         flexDirection: 'row',
-
+      },
+      footerImg:{
+        marginLeft:20,
       },
 })

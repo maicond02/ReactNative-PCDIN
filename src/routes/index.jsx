@@ -1,48 +1,27 @@
-import Home from "../screens/Home";
-import Register from "../components/Register";
-import Feed from "../components/User/Feed";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Button, TouchableOpacity, Text, TextInput } from "react-native";
-import NavFeed from '../components/Navbars/Feed';
-import NavbarSearch from "../components/Navbars/Search";
+import Home from '../screens/Home'
+import Feed from '../components/User/Feed'
+import FriendsPage from '../screens/User/Friends';
 
-const Stack = createNativeStackNavigator();
+const {Navigator, Screen} = createBottomTabNavigator()
 
 export default function Route() {
   return (
-    <>
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="PCD-IN" component={Home} options={{
-                    title:'',
-                    headerLeft: () => (
-                    <Button title="PCD-IN" color="#0097FF"/>
-                    ),
+            <Navigator>
+                <Screen name="Home" component={Home} options={{
+                    title:'PCD-IN',
+                    tabBarStyle: { display:'none' },
                 }}/>
-                <Stack.Screen name="Register" component={Register}/>
-                <Stack.Screen name="Feed" component={Feed} 
-                options={{
-                    title:'',
-                    headerLeft:() =>(
-                    <>
-                        <NavFeed />
-                    </>
-                    ),
-                    headerRight: () => (
-                    <>
-                        <NavbarSearch/>
-                    </>
-                    ),
-                    headerStyle: {
-                    backgroundColor: '#0097FF',
-                    flex:1,
-                    },
+                <Screen name="Feed" component={Feed} options={{
+                    title:'HOME',
                 }}/>
-            </Stack.Navigator>
+                <Screen name="FriendsPage" component={FriendsPage} options={{
+                    title:'Friends',
+                }}/>
+            </Navigator>
         </NavigationContainer>
-    </>
-    
   );
 }
 
